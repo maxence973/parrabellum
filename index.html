@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parabellum</title>
+  <meta name="description" content="Parabellum répartit vos révisions sur vos créneaux libres, autour de vos cours, jusqu'à la veille de chaque examen.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="logo.svg" alt="">Parabellum</a>
+      <nav aria-label="Navigation principale">
+        <a href="index.html" aria-current="page">L'application</a>
+        <a href="telechargement.html">Télécharger</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="motto">SI VIS PACEM, PARA BELLUM</p>
+        <h1>Préparez la guerre des examens, jour après jour</h1>
+        <p class="lead">Parabellum découpe chaque matière en chapitres et les répartit sur vos créneaux
+          libres, autour de vos cours et de votre sommeil. Vous savez chaque jour quoi travailler,
+          et pendant combien de temps.</p>
+        <div class="actions">
+          <a class="button" href="telechargement.html">Télécharger Parabellum</a>
+          <a class="button ghost" href="#objectif">À quoi ça sert</a>
+        </div>
+      </div>
+      <div>
+        <div class="planning" role="img" aria-label="Exemple d'emploi du temps : les cours sont hachurés, les séances de révision de maths, de physique et d'anglais sont placées sur les créneaux libres.">
+          <span></span><span class="day">Lun.</span><span class="day">Mar.</span><span class="day">Mer.</span><span class="day">Jeu.</span><span class="day">Ven.</span>
+          <span class="hour" style="grid-row:2">08:00</span>
+          <span class="hour" style="grid-row:4">10:00</span>
+          <span class="hour" style="grid-row:6">12:00</span>
+          <span class="hour" style="grid-row:8">14:00</span>
+          <span class="slot course" style="grid-column:2;grid-row:2/6">Cours</span>
+          <span class="slot course" style="grid-column:3;grid-row:3/7">Cours</span>
+          <span class="slot course" style="grid-column:4;grid-row:2/5">Cours</span>
+          <span class="slot course" style="grid-column:5;grid-row:4/8">Cours</span>
+          <span class="slot course" style="grid-column:6;grid-row:2/6">Cours</span>
+          <span class="slot m1" style="grid-column:2;grid-row:7/10">Maths<br>chap. 4</span>
+          <span class="slot m3" style="grid-column:3;grid-row:2/3">Anglais</span>
+          <span class="slot m2" style="grid-column:3;grid-row:8/10">Physique</span>
+          <span class="slot m1" style="grid-column:4;grid-row:6/9">Maths<br>chap. 5</span>
+          <span class="slot m2" style="grid-column:5;grid-row:2/4">Physique</span>
+          <span class="slot m3" style="grid-column:5;grid-row:9/10">Anglais</span>
+          <span class="slot m1" style="grid-column:6;grid-row:7/10">Maths<br>chap. 6</span>
+        </div>
+        <p class="planning-caption">Hachuré : vos cours importés. En couleur : les séances placées par Parabellum.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="objectif">
+      <div class="wrap">
+        <h2 class="section-title">L'objectif</h2>
+        <div class="prose">
+          <p>Avant un examen, le plus difficile n'est pas de travailler. C'est de savoir par où commencer,
+            et de s'y tenir quand les cours, les trajets et la fatigue grignotent la semaine.</p>
+          <p>Parabellum fait ce calcul à votre place. Vous indiquez pour chaque matière le nombre de
+            chapitres, le temps qu'un chapitre demande et la date de l'examen. L'application en déduit
+            le temps total, puis pose une séance par chapitre sur les créneaux vraiment libres de votre
+            emploi du temps, de façon à avoir terminé la veille de l'examen.</p>
+          <p>Le planning n'est jamais figé. Si vous prenez de l'avance ou du retard, les séances
+            restantes sont réparties à nouveau.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Comment ça marche</h2>
+        <ol class="steps">
+          <li>
+            <h3>Créez vos modules</h3>
+            <p>Un module par matière : un nom, une couleur, le lien vers le site du cours, le nombre de
+              chapitres, le temps par chapitre et, si besoin, la date de l'examen.</p>
+          </li>
+          <li>
+            <h3>Importez vos cours</h3>
+            <p>Chargez le fichier .ics de votre école ou collez son adresse d'abonnement. Vos cours
+              s'affichent dans l'emploi du temps et sont mis à jour sans doublon.</p>
+          </li>
+          <li>
+            <h3>Demandez un planning</h3>
+            <p>Parabellum place les chapitres sur les créneaux libres : pas pendant les cours, pas
+              pendant le sommeil, jamais deux séances de la même matière le même jour.</p>
+          </li>
+          <li>
+            <h3>Travaillez, chronomètre lancé</h3>
+            <p>Démarrez la séance, terminez-la, indiquez les chapitres faits. Le temps est compté et le
+              reste du planning s'ajuste.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Ce que l'application fait aussi</h2>
+        <div class="features">
+          <div>
+            <h3>Des rappels qui insistent</h3>
+            <p>Les jours où une séance est prévue et pas encore faite, une notification arrive toutes
+              les 30 minutes de 18h00 à minuit. Les horaires se règlent, les rappels se coupent.</p>
+          </div>
+          <div>
+            <h3>Un planning que vous gardez en main</h3>
+            <p>Déplacez une séance, placez-en une vous-même, remplacez un cours annulé. Vos choix sont
+              conservés quand le planning est recalculé.</p>
+          </div>
+          <div>
+            <h3>Le temps réellement travaillé</h3>
+            <p>Le tableau de bord affiche le temps passé aujourd'hui et cette semaine, et les jours où
+              vous avez tenu votre séance.</p>
+          </div>
+          <div>
+            <h3>Vos données restent chez vous</h3>
+            <p>Aucun compte, aucun serveur. Tout est enregistré sur votre ordinateur ou votre téléphone.
+              Les versions Windows et Android sont indépendantes l'une de l'autre.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap closing">
+        <blockquote>Si vis pacem, para bellum.
+          <span>Qui veut la paix prépare la guerre. Qui veut des examens sereins les prépare un chapitre à la fois.</span>
+        </blockquote>
+        <a class="button" href="telechargement.html">Télécharger pour Windows ou Android</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Parabellum, application gratuite, sans compte et sans publicité.</span>
+      <a href="telechargement.html">Télécharger</a>
+    </div>
+  </footer>
+</body>
+</html>
